@@ -1,0 +1,31 @@
+<html>
+ 
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://fb.me/react-15.1.0.js"></script>
+    <script src="https://fb.me/react-dom-15.1.0.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script>
+    <script src="./main.jsx" type="text/babel">
+    axios.post('/signin', {
+    email: this.state.email,
+    password: this.state.password
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+    </script>
+</head>
+ 
+<body>
+    <div>
+        <div id="app" class="container"></div>
+    </div>
+    
+</body>
+ 
+</html>
